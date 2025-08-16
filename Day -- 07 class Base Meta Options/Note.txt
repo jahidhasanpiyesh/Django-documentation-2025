@@ -1,0 +1,43 @@
+Day -- 07 class Base Meta Options
+
+Use of new Tech -- practice...
+
+** Create Any Class Name & fields.
+** Create Meta Class & multiple fields.
+** New Keyword -- Max_langht, ordering, verbose_name_plural.
+** View to admin site all new model app. Just register admin site.
+
+
+---- Then Output ---- 
+
+core_coreapp1
+
+	*Columns:
+
+		**id → AutoField (primary key, auto-incremented)
+
+		**note → VARCHAR(500), cannot exceed 500 characters
+
+core_coreapp
+
+	*Columns:
+
+		**id → AutoField
+
+		**nm → VARCHAR(100)
+
+		**Default ordering: by nm (ascending).
+
+		**Admin plural name: will show as “Name”.
+
+core_coreapp2
+
+	*Columns:
+
+		**id → AutoField
+
+		**tech → VARCHAR(50)
+
+		**Default ordering: by tech.
+
+		**Admin singular name: will show as “technology”.
