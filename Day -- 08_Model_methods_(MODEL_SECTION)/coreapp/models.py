@@ -9,5 +9,11 @@ class person(models.Model):
     def baby_status(self):
         import datetime
 
-        if self.birth_date < datetime.date(1945, 8, 1):
+        if self.birth_date < datetime.date(2025, 2, 4):
             return "Pre-boomer"
+        
+        elif self.birth_date < datetime.date(2025, 2, 2):
+            return "Baby-boomer"
+        
+        else:
+            return "Post-boomer"
