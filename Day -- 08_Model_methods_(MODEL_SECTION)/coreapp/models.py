@@ -27,4 +27,11 @@ class manager(models.Model):
     name = models.CharField(max_length=100)
     position = models.CharField(max_length=500)
     join_date = models.DateField()
-    
+
+    def status(self):
+        import datetime
+
+        if self.join_date <datetime.date(2025, 5, 6):
+            return 'join-boomer'
+        else:
+            return 'join-post-boomer'
