@@ -22,3 +22,9 @@ class person(models.Model):
     def full_name(self):
         # "Returns the person's full name."
         return f"{self.first_name} {self.last_name}"
+    
+class manager(models.Model):
+    name = models.CharField(max_length=100)
+    position = models.CharField(max_length=500)
+    join_date = models.DateField()
+    
